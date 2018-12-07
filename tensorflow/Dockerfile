@@ -6,7 +6,9 @@ RUN apt-get update && \
 RUN pip --no-cache-dir install \
         ftfy \
         spacy \
-        tqdm
+        tqdm \
+        pyhocon \
+        advisor
 
 COPY bin/ /usr/bin/
 
